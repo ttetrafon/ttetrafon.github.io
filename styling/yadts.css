@@ -1,0 +1,49 @@
+:root {
+	--footer-height: 30px;
+	--header-height: 30px;
+	--wall-margin: 5px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+body {
+	background-color: rgb(65, 65, 65);
+}
+
+main {
+	position: absolute;
+	top: var(--header-height);
+	bottom: var(--footer-height);
+	left: 15%;
+	right: var(--wall-margin);
+}
+
+nav {
+	position: absolute;
+	top: var(--header-height);
+	bottom: var(--footer-height);
+	left: var(--wall-margin);
+	right: 75%;
+}
+
+header {
+	height: var(--header-height);
+	position: absolute;
+	top: var(--wall-margin);
+	left: var(--wall-margin);
+	right: var(--wall-margin);
+}
+
+footer {
+	height: var(--footer-height);
+	position: absolute;
+	bottom: var(--wall-margin);
+	left: var(--wall-margin);
+	right: var(--wall-margin);
+	text-align: right;
+	font-size: 14px;
+}
